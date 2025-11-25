@@ -224,80 +224,6 @@ main {
     text-align: center;
 }
 
-/* Container principal do formulário */
-.form-contato {
-    width: 100%;
-    max-width: 550px;
-
-    display: grid;
-    gap: 20px;
-
-    margin-top: 30px;
-    padding: 30px;
-
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.form-grupo {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-grupo label {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.form-contato input,
-.form-contato textarea {
-    padding: 12px 14px;
-    
-    border: 2px solid #ccc;
-    border-radius: 8px;
-
-    background: #f7f7f7;
-    color: #111;
-
-    font-size: 1rem;
-    transition: .3s;
-}
-
-.form-contato input::placeholder,
-.form-contato textarea::placeholder {
-    color: #888;
-}
-
-.form-contato input:focus,
-.form-contato textarea:focus {
-    border-color: #000;
-    background: #fff;
-    box-shadow: 0 0 6px rgba(0,0,0,0.25);
-    outline: none;
-}
-
-.btn-form {
-    padding: 12px 30px;
-
-    background: #000;
-    color: #fff;
-
-    border: none;
-    border-radius: 8px;
-
-    font-size: 1.1rem;
-    font-weight: bold;
-
-    cursor: pointer;
-    transition: .3s;
-}
-
-.btn-form:hover {
-    background: #333;
-}
-
                     /* footer */
 footer {
     background: black;
@@ -321,11 +247,5 @@ footer {
     .menu {
         flex-direction: column;
         gap: 10px;
-    }
-}
-                    /* responsividade do formulário */
-@media (max-width: 600px) {
-    .form-contato {
-        padding: 20px;
     }
 }
