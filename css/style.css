@@ -1,4 +1,4 @@
-/* Configuração básica de estilo */
+                    /* configuração básica, antes das prioridades */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    /* Body como container flex */
+    /* body como container flex */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ a {
     color: rgb(36, 36, 184);
 }
 
-/* Animações */
+                    /* definindo as animações */
 .fade-in {
     animation: fadeIn 1s ease forwards;
 }
@@ -38,13 +38,13 @@ a {
     animation: slideSide 1s ease forwards;
 }
 
-/* Animação fade-in */
+                    /* animação fade-in (aparece do nada, mágica, boom) */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* Animação slide-up */
+                    /* animação slide-up (aparece vindo de baixo) */
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -56,6 +56,7 @@ a {
     }
 }
 
+                    /* animação slide-side (aparece vindo do lado) */
 @keyframes slideSide {
     from {
         opacity: 0;
@@ -67,7 +68,7 @@ a {
     }
 }
 
-/* Header e Navegação */
+                    /* Header e Navegação */
 header {
     background: black;
     padding: 15px 0;
@@ -108,12 +109,12 @@ nav {
     border-bottom: 2px solid white;
 }
 
-/* faz o conteúdo preencher o container principal do site */
+                    /* faz o conteúdo preencher todo o container principal do site */
 main {
     flex: 1;
 }
 
-/* Home */
+                    /* Home */
 .home-container {
     display: grid;
     place-items: center;
@@ -147,7 +148,7 @@ main {
     background: #333;
 }
 
-/* Sobre */
+                    /* Sobre */
 .sobre {
     max-width: 1200px;
     margin: auto;
@@ -179,7 +180,7 @@ main {
     color: #444;
 }
 
-/* Projetos */
+                    /* Projetos */
 .projetos-container {
     max-width: 1200px;
     margin: auto;
@@ -213,7 +214,7 @@ main {
     box-shadow: 0 10px 25px rgba(36, 36, 184, 0.28);
 }
 
-/* Contato */
+                    /* Contato */
 .contato-container {
     max-width: 900px;
     margin: auto;
@@ -223,7 +224,7 @@ main {
     text-align: center;
 }
 
-/* Footer */
+                    /* Footer */
 footer {
     background: black;
     color: white;
@@ -232,7 +233,7 @@ footer {
     margin-top: auto;
 }
 
-/* Responsividade */
+                    /* Responsividade */
 @media (max-width: 900px) {
     .sobre {
         grid-template-columns: 1fr;
@@ -247,4 +248,5 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+
 }
